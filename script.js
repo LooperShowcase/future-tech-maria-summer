@@ -119,8 +119,9 @@ async function openai_test() {
       const message = responseData.choices[0].message.content;
       conversationAssistantAdd(message);
       
-      const utterance = new SpeechSynthesisUtterance(message)
-      speechSynthesis.speak('');
+      // const utterance = new SpeechSynthesisUtterance(message)
+      // speechSynthesis.speak('');
+      
        setTimeout(() => playByText("en-US", message), 300)
       return(message);
     }

@@ -75,9 +75,10 @@
 </script>
 
     <h1 id="number"></h1>
-    
+    <button onclick="speak();">Init audio</button>
     <div class="container">
     <form onsubmit="event.preventDefault();
+    
     conversationUserAdd(document.getElementById('input_text').value,
     document.getElementById('number').value);
     openai_test();">
