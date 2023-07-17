@@ -1,42 +1,73 @@
-body{
+body {
     font-family: 'Shadows Into Light', cursive;
-}
-
-#input_text{
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(194, 161, 213, 1) 50%,
+      rgba(0, 212, 255, 1) 100%
+    );
+  }
+  
+  #input_text {
     padding: 1rem;
     margin-bottom: 1rem;
     width: 100%;
     border: none;
     border-radius: 5px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    font-family: 'Shadows Into Light', cursive;  
-}
-
-#submit_button{
-    padding: 1rem  2rem;
+    font-family: 'Shadows Into Light', cursive;
+  }
+  
+  #submit_button {
+    padding: 1rem 2rem;
     margin-bottom: 1.2rem;
     background-color: rgb(64, 102, 185);
-    color:rgb(0, 0, 0) ;
+    color: rgb(0, 0, 0);
     width: 100%;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0px 0px 20px rgba(189, 95, 134, 0.1);
-    transition:background-color  0.2s ;
-    font-family: 'Shadows Into Light', cursive; 
-}
-
-#submit_button:hover{
-
-    background-color:rgb(126, 11, 130) ;
-}
-.container{
-
-    display:flex ;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center ;
-    height:100vh;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(194,161,213,1) 50%, rgba(0,212,255,1) 100%);
-}
+    transition: background-color 0.2s;
+    font-family: 'Shadows Into Light', cursive;
+  }
+  
+  #submit_button:hover {
+    background-color: rgb(126, 11, 130);
+  }
+  
+  /* Media Queries */
+  
+  /* Mobile Devices */
+  @media (max-width: 767px) {
+    #input_text,
+    #submit_button {
+      width: 80%;
+    }
+  }
+  
+  /* Tablets and Small Desktop Screens */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #input_text,
+    #submit_button {
+      width: 60%;
+    }
+  }
+  
+  /* Larger Desktop Screens */
+  @media (min-width: 1024px) {
+    #input_text,
+    #submit_button {
+      width: 40%;
+    }
+  }
+  

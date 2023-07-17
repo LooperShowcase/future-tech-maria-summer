@@ -121,7 +121,6 @@ async function openai_test() {
       
       // const utterance = new SpeechSynthesisUtterance(message)
       // speechSynthesis.speak('');
-      
        setTimeout(() => playByText("en-US", message), 300)
       return(message);
     }
